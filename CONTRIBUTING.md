@@ -115,11 +115,11 @@ We welcome code contributions in all supported languages:
 
 ```bash
 # Fork the repository on GitHub, then clone your fork
-git clone https://github.com/YOUR-USERNAME/My-Public-Repo.git
-cd My-Public-Repo
+git clone https://github.com/beau-ryan/PublicRepo.git
+cd PublicRepo
 
 # Add upstream remote
-git remote add upstream https://github.com/beau-ryan/My-Public-Repo.git
+git remote add upstream https://github.com/beau-ryan/PublicRepo.git
 ```
 
 ### 2. Set Up Development Environment
