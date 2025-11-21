@@ -13,8 +13,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/beau-ryan/My-Public-Repo.git
-cd My-Public-Repo
+git clone https://github.com/beau-ryan/PublicRepo.git
+cd PublicRepo
 
 # Quick setup (Windows)
 .\scripts\setup.ps1
