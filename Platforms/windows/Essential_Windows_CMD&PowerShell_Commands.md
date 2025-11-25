@@ -168,7 +168,7 @@ For more advanced scenarios, see [PowerShell Gallery](https://www.powershellgall
 ## Useful Resources
 - [Windows Command Line Documentation](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands)
 - [PowerShell Documentation](https://docs.microsoft.com/powershell/)
-- [Windows Networking Commands](https://learn.microsoft.com/en-us/windows/resources/)
+- [Windows Client Documentation](https://learn.microsoft.com/en-us/windows/resources/)
 
 ---
 
