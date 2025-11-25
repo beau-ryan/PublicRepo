@@ -17,10 +17,10 @@ git clone https://github.com/beau-ryan/PublicRepo.git
 cd PublicRepo
 
 # Quick setup (Windows)
-.\scripts\setup.ps1
+.\Platforms\windows\powershell\menu.ps1
 
 # Quick setup (Linux/macOS)
-./scripts/setup.sh
+./Platforms/unix/linux/setup.sh
 ```
 
 ---
@@ -33,7 +33,7 @@ cd PublicRepo
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
-- [Documentation] (#-documentation)
+- [Documentation](#-documentation)
 - [Contributing](#-contributing)
 - [License](#-license)
 
@@ -110,34 +110,105 @@ cd PublicRepo
 
 ### Prerequisites
 
-- **Windows**: PowerShell 5.1+ or PowerShell Core 7+
-- **Linux**: Bash 4.0+, Python 3.8+
-- **macOS**: Zsh or Bash, Python 3.8+
-- **Android**: Termux or compatible terminal emulator
+#### Windows
+
+- PowerShell 5.1+ or PowerShell Core 7+
+- Windows 10/11 recommended
+- Administrator privileges for security tools
+
+#### Linux
+
+- Bash 4.0+
+- Python 3.8+ (for Universal Runner and USOS apps)
+- Standard Unix utilities (grep, find, awk, sed)
+
+#### macOS
+
+- Zsh or Bash
+- Python 3.8+
+- Xcode Command Line Tools
+
+#### Android
+
+- Android 7.0+ (API level 24+)
+- Termux or compatible terminal emulator
+- Storage permissions for security scanning
 
 ### Quick Install
 
-#### Windows
+#### Windows PowerShell Setup
 
 ```powershell
-# Run as Administrator
+# Run as Administrator (if needed for execution policy)
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-.\powershell\setup.ps1
+
+# Navigate to platform scripts
+cd Platforms\windows\powershell
+
+# Launch main menu
+.\menu.ps1
+
+# Or run specific tools:
+.\security-scan.ps1        # Security scanning
+.\demo-menu.ps1            # Demo features
 ```
 
 #### Linux/macOS
 
 ```bash
-# Make installer executable
-chmod +x linux/setup.sh
-./linux/setup.sh
+# Navigate to platform scripts
+cd Platforms/unix/linux
+
+# Make scripts executable
+chmod +x *.sh
+
+# Run setup
+./setup.sh
+
+# Launch security menu
+./security-menu.sh
+
+# Or run system audit
+./system-audit.sh
 ```
 
-#### Manual Installation
+#### Universal Runner Installation
 
-1. Clone this repository
-2. Navigate to the platform-specific folder (`PlatForms/windows/` or `PlatForms/unix/`)
-3. Follow the README instructions for your platform
+```bash
+# Navigate to Universal Runner
+cd Projects/in-dev/USOS/Universal_RunnerApp/src/content/applications/code_review/universal_runner
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Run setup
+python setup.py install
+
+# Launch Universal Runner
+python main.py
+```
+
+#### USOS Full Application
+
+```bash
+# Navigate to USOS project
+cd Projects/in-dev/USOS
+
+# Run the full application
+python full-app.py
+```
+
+#### Android (SpiritApp)
+
+```bash
+# Navigate to spiritapp
+cd Projects/in-dev/USOS/Universal_RunnerApp/src/content/applications/spiritapp
+
+# Build with Gradle
+./gradlew build
+
+# Or open in Android Studio
+```
 
 ---
 
@@ -158,20 +229,29 @@ chmod +x linux/setup.sh
 
 ```powershell
 # Launch main menu
-.\PlatForms\windows\powershell\menu.ps1
+.\Platforms\windows\powershell\menu.ps1
 
-# Or run specific tools
-.\PlatForms\windows\powershell\security-scan.ps1
+# Run security scan
+.\Platforms\windows\powershell\security-scan.ps1
+
+# Demo menu for testing
+.\Platforms\windows\powershell\demo-menu.ps1
+
+# Open Linux/Ubuntu subsystem demo
+.\Platforms\windows\powershell\demo-open-linux-ubuntu.ps1
 ```
 
 #### Linux Security Audit
 
 ```bash
-# Launch interactive menu
-./PlatForms/unix/linux/security-menu.sh
+# Launch interactive security menu
+./Platforms/unix/linux/security-menu.sh
 
-# Or run direct commands
-./PlatForms/unix/linux/system-audit.sh
+# Run comprehensive system audit
+./Platforms/unix/linux/system-audit.sh
+
+# Run setup/installation
+./Platforms/unix/linux/setup.sh
 ```
 
 ---
@@ -179,47 +259,253 @@ chmod +x linux/setup.sh
 ## 📁 Project Structure
 
 ```plaintext
-GitHub-Project/
-├── 📄 README.md                    # You are here
-├── 📄 CONTRIBUTING.md              # Contribution guidelines
-├── 📄 LICENSE                     # MIT license
-├── 📁 PlatForms/                   # Platform-specific implementations
-│   ├── 📁 windows/                 # Windows PowerShell tools
-│   │   ├── � Essential_Windows_CMD&PowerShell_Commands.md
-│   │   └── �📁 powershell/
-│   └── 📁 unix/                    # Linux/macOS Bash scripts
-│       └── � linux/
-│           └── 📄 Ubuntu_linux_Cmd.md
-├── 📁 Project-Docs/                # Project documentation
-│   ├── 📄 USOS-Project.md          # Comprehensive project overview
-│   ├── 📄 Full-project.md          # Technical deep dive
-│   └── 📄 Project_Management.md    # Development planning
-└── 📄 tree.txt                     # Complete directory structure
+PublicRepo/
+│   .gitattributes
+│   .gitignore
+│   CODE_OF_CONDUCT.md
+│   CONTRIBUTING.md
+│   LICENSE
+│   PublicRepo.sln
+│   README.md                       # You are here
+│   tree.txt
+│   
+├───Platforms/                      # Platform-specific implementations
+│   ├───unix/
+│   │   │   Ubuntu_linux_Cmd.md
+│   │   │   
+│   │   └───linux/
+│   │           security-menu.sh
+│   │           setup.sh
+│   │           system-audit.sh
+│   │           
+│   └───windows/
+│       │   Essential_Windows_CMD&PowerShell_Commands.md
+│       │   
+│       └───powershell/
+│               demo-menu.ps1
+│               demo-open-linux-ubuntu.ps1
+│               menu.ps1
+│               security-scan.ps1
+│               
+├───Project-Docs/                   # Project documentation
+│   │   Dev_Guide.md
+│   │   Full-project.md
+│   │   Project_Management.md
+│   │   USOS-Project.md
+│   │   
+│   └───Docs/
+│           AI Orchestration Worker.doc
+│           CONTRIBUTION_README.md
+│           FULL_PROJECT_README.doc
+│           innovation_README.md
+│           Internal Pitch Deck for Stakeholders_Investors.md
+│           Kubernetes Deployment Example.doc
+│           Meta-Operating System vs. Full.md
+│           MobileOS_Comprehensive_Report.md
+│           MobileOS_Technical_Report.md
+│           NO-Trust-Policy.md
+│           Security Policy.md
+│           Universal Runner Contributing Guidelines.md
+│           Universal Runner External Pitch & Fundraising Overview.md
+│           USOS_Comprehensive_Report.md
+│           USOS_Technical_Report.md
+│           
+└───Projects/                       # Active and future projects
+    ├───ideas/
+    │       FutureProjectsdoc.md
+    │       
+    └───in-dev/
+        │   USOS.md
+        │   
+        └───USOS/                   # Main USOS project
+            │   .gitattributes
+            │   .gitignore
+            │   full-app.py
+            │   README.md
+            │   USOS.pyproj
+            │   USOS.sln
+            │   USOS.slnLaunch.user
+            │   USOS_README.md
+            │   __init__.py
+            │   
+            ├───PlatForms/          # USOS platform implementations
+            │   │   README.md
+            │   │   USOS.hta
+            │   │   USOS.ps1
+            │   │   
+            │   ├───Android/
+            │   │       android.sh
+            │   │       
+            │   ├───unix/
+            │   │   │   ssh.sh
+            │   │   │   
+            │   │   ├───android/
+            │   │   │       Termux.md
+            │   │   │       
+            │   │   ├───linux/
+            │   │   │       Ubuntu_linux_Cmd.md
+            │   │   │       
+            │   │   └───macOs/
+            │   │           MAC_OS_lion.md
+            │   │           
+            │   └───windows/
+            │       │   Essential_Windows_CMD&PowerShell_Commands.md
+            │       │   
+            │       └───powershell/
+            │               
+            └───Universal_RunnerApp/    # Universal Runner application
+                │   __init__.py
+                │   
+                └───src/
+                    │   __init__.py
+                    │   
+                    └───content/
+                        │   __init__.py
+                        │   
+                        └───applications/
+                            ├───code_review/
+                            │   │   README.md
+                            │   │   root.txt
+                            │   │   __init__.py
+                            │   │   
+                            │   └───universal_runner/
+                            │       │   main.py
+                            │       │   requirements.txt
+                            │       │   setup.py
+                            │       │   __init__.py
+                            │       │   
+                            │       └───src/
+                            │           │   __init__.py
+                            │           │   
+                            │           ├───cli/
+                            │           │   │   main.py
+                            │           │   │   __init__.py
+                            │           │   │   
+                            │           │   └───tests/
+                            │           │           test_runner_functionality.py
+                            │           │           
+                            │           ├───runner/
+                            │           │       formatter.py
+                            │           │       formatter_map.py
+                            │           │       language_map.py
+                            │           │       linter.py
+                            │           │       linter_map.py
+                            │           │       utils.py
+                            │           │       __init__.py
+                            │           │       
+                            │           ├───server/
+                            │           │       app.py
+                            │           │       
+                            │           └───universal_runner_web/
+                            │               │   .hintrc
+                            │               │   app.js
+                            │               │   index.html
+                            │               │   styles.css
+                            │               │   three.min.js
+                            │               │   
+                            │               └───css/
+                            │                       tailwind.min.css
+                            │                       
+                            ├───LumenCast/          # Live streaming application
+                            │   │   A_Versatile_Live_Streaming_App.md
+                            │   │   
+                            │   └───app/
+                            │       │   .txt
+                            │       │   
+                            │       └───src/
+                            │           ├───application/
+                            │           ├───core/
+                            │           ├───Infrastructure/
+                            │           ├───Infrastructure.Firebase/
+                            │           ├───Platform/
+                            │           └───tests/
+                            │               
+                            ├───shadow/             # Security application
+                            │   └───shadownet_sec/
+                            │       │   app.py
+                            │       │   requirements.txt
+                            │       │   STRIDE Analysis for MVP.txt
+                            │       │   __init__.py
+                            │       │   
+                            │       ├───docs/
+                            │       ├───src/
+                            │       │   ├───core/
+                            │       │   ├───montioring/
+                            │       │   ├───network/
+                            │       │   └───tests/
+                            │       │       
+                            │       └───web/
+                            │               
+                            └───spiritapp/          # Android application
+                                │   .gitignore
+                                │   build.gradle.kts
+                                │   gradle.properties
+                                │   gradlew
+                                │   gradlew.bat
+                                │   local.properties
+                                │   settings.gradle.kts
+                                │   
+                                ├───.gradle/
+                                ├───.idea/
+                                ├───app/
+                                │   └───src/
+                                │       ├───androidTest/
+                                │       ├───main/
+                                │       └───test/
+                                │           
+                                └───gradle/
 ```
 
 ---
 
-## 📚 Documentation Main Readme
+## 📚 Documentation
 
-- USOS_README.md - Comprehensive project overview ⭐
+### Main Documentation
+
+- **[USOS README](Projects/in-dev/USOS/USOS_README.md)** - Comprehensive USOS project overview ⭐
+- **[USOS Project Details](Projects/in-dev/USOS/USOS.md)** - In-development features
 
 ### Core Documentation
 
-- **[USOS Project Overview](Project-Docs/USOS-Project.md)** - Comprehensive project details
+- **[USOS Project Overview](Project-Docs/USOS-Project.md)** - Complete project details
 - **[Project Management](Project-Docs/Project_Management.md)** - Development planning and roadmap
-- **[Full Project README](Full-project.md)** - Technical deep dive
+- **[Full Project](Project-Docs/Full-project.md)** - Technical deep dive
+- **[Developer Guide](Project-Docs/Dev_Guide.md)** - Development guidelines
+
+### Extended Documentation
+
+- **[AI Orchestration Worker](Project-Docs/Docs/AI%20Orchestration%20Worker.doc)** - AI integration
+- **[Innovation README](Project-Docs/Docs/innovation_README.md)** - Innovation strategies
+- **[Security Policy](Project-Docs/Docs/Security%20Policy.md)** - Security guidelines
+- **[NO-Trust Policy](Project-Docs/Docs/NO-Trust-Policy.md)** - Zero-trust architecture
+- **[Contribution Guidelines](Project-Docs/Docs/CONTRIBUTION_README.md)** - How to contribute
+- **[Universal Runner Guidelines](Project-Docs/Docs/Universal%20Runner%20Contributing%20Guidelines.md)** - Runner development
+
+### Technical Reports
+
+- **[USOS Comprehensive Report](Project-Docs/Docs/USOS_Comprehensive_Report.md)** - Full USOS analysis
+- **[USOS Technical Report](Project-Docs/Docs/USOS_Technical_Report.md)** - Technical specifications
+- **[MobileOS Comprehensive Report](Project-Docs/Docs/MobileOS_Comprehensive_Report.md)** - Mobile OS analysis
+- **[MobileOS Technical Report](Project-Docs/Docs/MobileOS_Technical_Report.md)** - Mobile technical specs
 
 ### Platform Guides
 
-- **[Windows Commands](PlatForms/windows/Essential_Windows_CMD&PowerShell_Commands.md)** - PowerShell reference
-- **[Linux Commands](PlatForms/unix/linux/Ubuntu_linux_Cmd.md)** - Bash and Unix utilities
-- **[Platform README](PlatForms/README.md)** - Development guidelines
+- **[Windows Commands](Platforms/windows/Essential_Windows_CMD&PowerShell_Commands.md)** - PowerShell reference
+- **[Linux Commands](Platforms/unix/Ubuntu_linux_Cmd.md)** - Bash and Unix utilities
+- **[Platform README](Projects/in-dev/USOS/PlatForms/README.md)** - Platform development guidelines
+
+### Application Documentation
+
+- **[Universal Runner](Projects/in-dev/USOS/Universal_RunnerApp/src/content/applications/code_review/universal_runner/README.md)** - Runner documentation
+- **[LumenCast](Projects/in-dev/USOS/Universal_RunnerApp/src/content/applications/LumenCast/A_Versatile_Live_Streaming_App.md)** - Live streaming app
+- **[ShadowNet Security](Projects/in-dev/USOS/Universal_RunnerApp/src/content/applications/shadow/shadownet_sec/docs/README.md)** - Security application
 
 ### Quick References
 
 - **Installation**: See [Installation](#-installation) section above
-- **Usage Examples**: Check platform-specific folders
+- **Usage Examples**: Check platform-specific folders (`Platforms/windows/powershell/` or `Platforms/unix/linux/`)
 - **Troubleshooting**: Review log files in each tool's output directory
+- **Future Projects**: See [Ideas](Projects/ideas/FutureProjectsdoc.md)
 
 ---
 
@@ -268,7 +554,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌟 Acknowledgments
 
-**The Journey**: What started in July 2025 as frustration with subscription software and a desire to learn Python has evolved into a comprehensive platform for digital independence.
+**The Journey**: What started in July 2024 as frustration with subscription software and a desire to learn Python has evolved into a comprehensive platform for digital independence.
 
 - Built by [Beau-Ryan](https://github.com/beau-ryan) - one developer's journey from Python beginner to platform creator
 - **Mission**: Prove that you can own your tools, learn by building, and break free from subscription culture
