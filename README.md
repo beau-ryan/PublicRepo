@@ -1,11 +1,10 @@
 # USOS: Universal System Operations Technology Independence & User Sovereignty
 
 Updates will be continuous as I go over 
-the project and edit and adding files 
-so for accuracy, keep checking back for 
+the project and edit as well as adding files over time
+so for accuracy don't rely on documents to heavily till I have updated final main readme
+keep checking back for 
 changes and additional project files 
-
-
 
 ![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-blue)
