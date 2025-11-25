@@ -32,6 +32,10 @@ Test using Vm if you dont Trust the scripts/edit them before running.
 - `menu.ps1` , `setup.ps1`, `env.ps1`: These scripts help in setting up the development environment and installing necessary tools.
 
 ## Features 
+- Interactive menu for selecting and installing development tools
+- Automated downloading of development tools
+- Environment setup for development
+
 
 ## Notes
-- in Progress
+- in Progress, moore to be migrated into the public repo.
