@@ -9,23 +9,7 @@ function menu_selection {
 
 
 . "$PSScriptRoot\tools.ps1"
-# function download_all_dev_tools {
-#     param ([string]$destination)
-#     foreach ($tool in $tools) {
-#         $filename = ($tool -split "/")[-1]
-#         $destinationPath = Join-Path -Path $destination -ChildPath $filename
-#         if (-Not (Test-Path -Path $destinationPath)) {
-#             try {
-#                 Invoke-WebRequest -Uri $tool -OutFile $destinationPath
-#                 Write-Host "Downloaded: $filename" -ForegroundColor Green
-#             } catch {
-#                 Write-Host ("Failed to download " + $filename + ": " + $error[0].Exception.Message) -ForegroundColor Red
-#             }
-#         } else {
-#             Write-Host "$filename already exists. Skipping download." -ForegroundColor Yellow
-#         }
-#     }
-# }
+
 # Define the path to store downloaded tools
 $toolsPath = "$env:USERPROFILE\PublicRepo\MySyS\DevTools"
 # Ensure the tools directory exists
