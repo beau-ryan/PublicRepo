@@ -1,10 +1,10 @@
 # USOS: Universal System Operations Technology Independence & User Sovereignty
 
-Updates will be continuous as I go over 
+Updates will be continuous as I go over
 the project and edit as well as adding files over time
 so for accuracy don't rely on documents to heavily till I have updated final main readme
-keep checking back for 
-changes and additional project files 
+keep checking back for
+changes and additional project files
 
 ![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-blue)
@@ -62,7 +62,7 @@ cd PublicRepo
 **From frustration to freedom** - USOS provides tools that let you:
 
 - **Own your software**: No subscriptions, no dependencies, complete control
-- **Learn by building**: Started as Python education, now Sharing all aspects of computing I have learnt while on this journey 
+- **Learn by building**: Started as Python education, now Sharing all aspects of computing I have learnt while on this journey
 - **Work offline**: Everything runs locally without cloud dependencies  
 - **Cross-platform freedom**: One toolkit for Windows, Linux, macOS, and Android
 - **Transparent operation**: See exactly what your tools are doing with full logging
