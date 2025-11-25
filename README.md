@@ -62,7 +62,7 @@ cd PublicRepo
 **From frustration to freedom** - USOS provides tools that let you:
 
 - **Own your software**: No subscriptions, no dependencies, complete control
-- **Learn by building**: Started as Python education, now teaches all aspects of computing
+- **Learn by building**: Started as Python education, now Sharing all aspects of computing I have learnt while on this journey 
 - **Work offline**: Everything runs locally without cloud dependencies  
 - **Cross-platform freedom**: One toolkit for Windows, Linux, macOS, and Android
 - **Transparent operation**: See exactly what your tools are doing with full logging
