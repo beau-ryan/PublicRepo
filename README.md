@@ -11,9 +11,9 @@ I developed along my journey, I will upload simple files I have developed.
 
 
 This repo will have the ability to view
-the folder structures and documents of my projects,for 
-actual full projects and coded files 
-contact the developer for the exact package contents or projects u want to look at. 🤣🤣
+the folder structures and documents of my projects, for 
+actual full projects, content and coded files 
+contact the developer for the exact package contents or projects you want to look at. 🤣🤣
 
 
 ![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
