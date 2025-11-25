@@ -1,0 +1,37 @@
+This is to be treated as the user Guide so the users
+can understand how to use PowerShell on Windows platform.
+
+# PowerShell User Guide for Windows
+
+## Introduction
+
+PowerShell is a powerful scripting language and command-line shell designed for system administration and automation. This
+guide provides an overview of how to use PowerShell on Windows platforms.
+
+## Getting Started
+
+To get started with PowerShell on Windows, follow these steps:
+
+- Using the `menu.ps1` script to interactively select and install development tools
+- Running PowerShell scripts to automate tasks
+
+## files ypu will find in the powershell folder
+You can run the following scripts located in the `Platforms/windows/powershell/` directory:
+
+cd Platforms/windows/powershell/
+
+Test using Vm if you dont Trust the scripts/edit them before running.
+
+```powershell
+
+./menu.ps1
+./setup.ps1
+./env.ps1
+
+```
+- `menu.ps1` , `setup.ps1`, `env.ps1`: These scripts help in setting up the development environment and installing necessary tools.
+
+## Features 
+
+## Notes
+- in Progress

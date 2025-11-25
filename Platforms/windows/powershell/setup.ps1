@@ -110,9 +110,9 @@ function download_all_dev_tools {
     }
 }
 # Main script execution
-$basePath = "I:\PublicRepo\MySyS"
-create__all_folder_if_not_exists -path $basePath
-$toolsPath = Join-Path -Path $basePath -ChildPath "DevTools"
+$env = "I:\PublicRepo\MySyS"
+create__all_folder_if_not_exists -path $env
+$toolsPath = Join-Path -Path $env -ChildPath "DevTools"
 create__all_folder_if_not_exists -path $toolsPath
 download_all_dev_tools -destination $toolsPath
 # Note: After downloading, you may need to manually run the installers or script their installation as

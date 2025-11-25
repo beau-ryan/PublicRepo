@@ -9,9 +9,8 @@ function menu_selection {
 
 
 . "$PSScriptRoot\tools.ps1"
-
 # Define the path to store downloaded tools
-$toolsPath = "$env:USERPROFILE\PublicRepo\MySyS\DevTools"
+$toolsPath = "$env:USERPROFILE\Downloads\PublicRepo\MySyS\DevTools"
 # Ensure the tools directory exists
 if (-Not (Test-Path -Path $toolsPath)) {
     New-Item -ItemType Directory -Path $toolsPath | Out-Null
