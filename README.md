@@ -122,15 +122,15 @@ cd PublicRepo
 ```powershell
 # Run as Administrator
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-.\install\windows-setup.ps1
+.\powershell\setup.ps1
 ```
 
 #### Linux/macOS
 
 ```bash
 # Make installer executable
-chmod +x install/unix-setup.sh
-./install/unix-setup.sh
+chmod +x linux/setup.sh
+./linux/setup.sh
 ```
 
 #### Manual Installation
@@ -158,7 +158,7 @@ chmod +x install/unix-setup.sh
 
 ```powershell
 # Launch main menu
-.\PlatForms\windows\powershell\main-menu.ps1
+.\PlatForms\windows\powershell\menu.ps1
 
 # Or run specific tools
 .\PlatForms\windows\powershell\security-scan.ps1
@@ -168,10 +168,10 @@ chmod +x install/unix-setup.sh
 
 ```bash
 # Launch interactive menu
-./PlatForms/unix/bashScripts/security-menu.sh
+./PlatForms/unix/linux/security-menu.sh
 
 # Or run direct commands
-./PlatForms/unix/bashScripts/system-audit.sh
+./PlatForms/unix/linux/system-audit.sh
 ```
 
 ---
