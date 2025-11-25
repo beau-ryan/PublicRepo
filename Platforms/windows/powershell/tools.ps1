@@ -81,7 +81,7 @@ $tools = @(
     "https://sourceforge.net/projects/mingw-w64/files/latest/download",
     "https://nmap.org/dist/nmap-7.94-setup.exe"  # Nmap (Windows installer)
 )
-download_all_dev_tools -destination "$env:USERPROFILE\DevTools"
+# download_all_dev_tools -destination "$env:USERPROFILE\DevTools"
 # Add more URLs as needed
 # $downloadDir = "$env:USERPROFILE\DevTools"
 # if (-not (Test-Path $downloadDir)) {
