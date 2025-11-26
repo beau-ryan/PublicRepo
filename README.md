@@ -6,15 +6,13 @@ so for accuracy don't rely on documents to heavily till I have updated final mai
 keep checking back for
 changes and additional project files
 
-also these are the first lot of projects 
+also these are the first lot of projects
 I developed along my journey, I will upload simple files I have developed.
 
-
 This repo will have the ability to view
-the folder structures and documents of my projects, for 
-actual full projects, content and coded files 
+the folder structures and documents of my projects, for
+actual full projects, content and coded files
 contact the developer for the exact package contents or projects you want to look at. 🤣🤣
-
 
 ![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-blue)
