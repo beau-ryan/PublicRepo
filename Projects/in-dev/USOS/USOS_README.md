@@ -2,6 +2,9 @@
 
 ## Project Status
 
+This is the drafting process
+(not accurate)
+
 - **Development:** Ongoing (solo)
 - **Phase:** Getting Production Ready & Partial Integration, still working on changes and debugging, integrating C# Security Framework + React Web UI + Python Backend, WPF, and Docker
 
