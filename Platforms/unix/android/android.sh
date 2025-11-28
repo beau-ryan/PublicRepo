@@ -72,7 +72,7 @@ while true; do
 			pkg install android-tools
 			echo "done"
 			;;
-		7)	# Advanced option 1.
+		7)	# Advanced option 1. you will have #to add your actual ip as this provides an example 
 			echo "scanning open ports"
 			if command -v nmap >/dev/null 2>&1; then
 				read -p "Enter IP or port no to scan (default: localhost): " target
