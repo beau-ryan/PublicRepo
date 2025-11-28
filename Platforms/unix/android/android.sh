@@ -76,10 +76,10 @@ while true; do
 			echo "scanning open ports"
 			if command -v nmap >/dev/null 2>&1; then
 				read -p "Enter IP or port no to scan (default: localhost): " target
-				target=${target:-192.168.1.8/24}
+				target=${target:-000.000.0.0/24}
 				nmap -Pn -p- "$target"
 			else
-				nmap -v 192.168.1.8/24
+				nmap -v 000.000.0.0/24
 				echo "nmap not found install try again"
 				netstat -tuln
 			fi
