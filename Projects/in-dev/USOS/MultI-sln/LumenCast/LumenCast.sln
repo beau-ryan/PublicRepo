@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "..\..\Universal_RunnerApp\src\content\applications\LumenCast\app\src\application\Application.csproj", "{8E7518FF-E279-4B8C-5CA9-CFB2B56B4CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\..\Universal_RunnerApp\src\content\applications\LumenCast\app\src\core\Core.csproj", "{E2557FDF-0342-F367-6C0C-94B630E09E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\..\Universal_RunnerApp\src\content\applications\LumenCast\app\src\Infrastructure\Infrastructure.csproj", "{7551FEB0-6360-36AC-D80A-C24E844B90B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Firebase", "..\..\Universal_RunnerApp\src\content\applications\LumenCast\app\src\Infrastructure.Firebase\Infrastructure.Firebase.csproj", "{2C08B316-64DE-CB66-0817-FB5209B4B11B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LumenCast.Client", "..\..\Universal_RunnerApp\src\content\applications\LumenCast\app\src\Platform\LumenCast.Client.csproj", "{B43AFA3F-C099-F5C0-943E-E8FE93BBE4A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E7518FF-E279-4B8C-5CA9-CFB2B56B4CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7518FF-E279-4B8C-5CA9-CFB2B56B4CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7518FF-E279-4B8C-5CA9-CFB2B56B4CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7518FF-E279-4B8C-5CA9-CFB2B56B4CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2557FDF-0342-F367-6C0C-94B630E09E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2557FDF-0342-F367-6C0C-94B630E09E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2557FDF-0342-F367-6C0C-94B630E09E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2557FDF-0342-F367-6C0C-94B630E09E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7551FEB0-6360-36AC-D80A-C24E844B90B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7551FEB0-6360-36AC-D80A-C24E844B90B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7551FEB0-6360-36AC-D80A-C24E844B90B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7551FEB0-6360-36AC-D80A-C24E844B90B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C08B316-64DE-CB66-0817-FB5209B4B11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C08B316-64DE-CB66-0817-FB5209B4B11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C08B316-64DE-CB66-0817-FB5209B4B11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C08B316-64DE-CB66-0817-FB5209B4B11B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43AFA3F-C099-F5C0-943E-E8FE93BBE4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43AFA3F-C099-F5C0-943E-E8FE93BBE4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43AFA3F-C099-F5C0-943E-E8FE93BBE4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43AFA3F-C099-F5C0-943E-E8FE93BBE4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FD0F083-F59A-404F-A6CF-105A5A480EA2}
+	EndGlobalSection
+EndGlobal

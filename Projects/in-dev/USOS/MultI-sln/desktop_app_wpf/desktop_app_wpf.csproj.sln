@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desktop_app_wpf", "..\..\Universal_RunnerApp\src\interfaces\platform_ui\desktop_app_wpf\cross_platform_desktop\desktop_app_wpf.csproj", "{B1B3A5F1-3F1C-9329-AB02-B3EB47824A29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1B3A5F1-3F1C-9329-AB02-B3EB47824A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B3A5F1-3F1C-9329-AB02-B3EB47824A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B3A5F1-3F1C-9329-AB02-B3EB47824A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B3A5F1-3F1C-9329-AB02-B3EB47824A29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F4393AB-72B2-4DE0-AFFB-E1A0602CD08C}
+	EndGlobalSection
+EndGlobal

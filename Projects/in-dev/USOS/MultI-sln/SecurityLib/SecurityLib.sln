@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityLib", "..\..\Universal_RunnerApp\src\security_solutions\SecurityLib\SecurityLib.csproj", "{46175D6A-2D70-7411-9872-BA3E0174DA8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureSecurityDaemon", "..\..\Universal_RunnerApp\src\security_solutions\SecureSecurityDaemon\SecureSecurityDaemon.csproj", "{AE35385D-25CE-CE34-3C4D-AFBF2E0F758B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46175D6A-2D70-7411-9872-BA3E0174DA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46175D6A-2D70-7411-9872-BA3E0174DA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46175D6A-2D70-7411-9872-BA3E0174DA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46175D6A-2D70-7411-9872-BA3E0174DA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE35385D-25CE-CE34-3C4D-AFBF2E0F758B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE35385D-25CE-CE34-3C4D-AFBF2E0F758B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE35385D-25CE-CE34-3C4D-AFBF2E0F758B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE35385D-25CE-CE34-3C4D-AFBF2E0F758B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5338FDC-9D00-4492-B76E-E72CDFB7DAC5}
+	EndGlobalSection
+EndGlobal
